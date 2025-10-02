@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBClassifier
+import joblib
+import os
 
 # -----------------------------
 # Step 1: Define symptom dictionaries by sex
@@ -220,14 +222,27 @@ le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 
 # -----------------------------
-# Step 5: Train XGBoost multi-class classifier
+# Step 5: Train or load XGBoost model
 # -----------------------------
-model = XGBClassifier(
-    objective='multi:softprob',
-    num_class=len(le.classes_),
-    eval_metric='mlogloss',
-)
-model.fit(X, y_encoded)
+model_file = "cancer_model.pkl"
+le_file = "label_encoder.pkl"
+
+if os.path.exists(model_file) and os.path.exists(le_file):
+    # Load existing model and encoder
+    model = joblib.load(model_file)
+    le = joblib.load(le_file)
+else:
+    # Train model if not found
+    model = XGBClassifier(
+        objective='multi:softprob',
+        num_class=len(le.classes_),
+        eval_metric='mlogloss',
+    )
+    model.fit(X, y_encoded)
+
+    # Save model and encoder
+    joblib.dump(model, model_file)
+    joblib.dump(le, le_file)
 
 # -----------------------------
 # Step 6: Predict function considering sex
