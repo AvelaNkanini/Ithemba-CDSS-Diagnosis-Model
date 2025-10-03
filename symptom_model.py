@@ -11,77 +11,31 @@ import os
 # Male-only cancers
 male_only_cancers = {
     "Prostate Cancer": [
-        "No symptoms (early stage)",
-        "Erectile dysfunction",
-        "Blood in urine",
-        "Blood in semen",
-        "Trouble urinating",
-        "Frequent urination",
-        "Weak urine stream / slow flow",
-        "Fatigue",
-        "Unexplained weight loss",
-        "Back pain",
-        "Bone pain (pelvis, hips, ribs, spine, head, neck)",
-        "Bone fracture (from metastasis)",
-        "Leg weakness",
-        "Foot weakness",
-        "Paralysis (from spinal cord compression)"
+        "No symptoms (early stage)", "Erectile dysfunction", "Blood in urine", "Blood in semen",
+        "Trouble urinating", "Frequent urination", "Weak urine stream / slow flow", "Fatigue",
+        "Unexplained weight loss", "Back pain", "Bone pain (pelvis, hips, ribs, spine, head, neck)",
+        "Bone fracture (from metastasis)", "Leg weakness", "Foot weakness", "Paralysis (from spinal cord compression)"
     ]
 }
 
 # Female-only cancers
 female_only_cancers = {
     "Cervical Cancer": [
-        "No early symptoms (often)",
-        "Vaginal bleeding",
-        "Bleeding after sex",
-        "Vaginal mass",
-        "Pain during sex",
-        "Vaginal discharge",
-        "Bleeding after douching",
-        "Bleeding after pelvic exam",
-        "Loss of appetite",
-        "Weight loss",
-        "Fatigue",
-        "Pelvic pain",
-        "Back pain",
-        "Leg pain",
-        "Swollen legs",
-        "Heavy vaginal bleeding",
-        "Bone fractures",
-        "Urine leakage from vagina",
-        "Feces leakage from vagina",
-        "Flank pain (kidney blockage)",
-        "Blood clots in legs",
-        "Rectal bleeding",
-        "Blood in urine"
+        "No early symptoms (often)", "Vaginal bleeding", "Bleeding after sex", "Vaginal mass",
+        "Pain during sex", "Vaginal discharge", "Bleeding after douching", "Bleeding after pelvic exam",
+        "Loss of appetite", "Weight loss", "Fatigue", "Pelvic pain", "Back pain", "Leg pain", "Swollen legs",
+        "Heavy vaginal bleeding", "Bone fractures", "Urine leakage from vagina", "Feces leakage from vagina",
+        "Flank pain (kidney blockage)", "Blood clots in legs", "Rectal bleeding", "Blood in urine"
     ],
     "Uterine Cancer": [
-        "Abnormal vaginal bleeding",
-        "Abnormal vaginal discharge",
-        "Heavy menstrual bleeding",
-        "Bleeding between periods",
-        "Bleeding after menopause",
-        "Pelvic pain",
-        "Pelvic pressure"
+        "Abnormal vaginal bleeding", "Abnormal vaginal discharge", "Heavy menstrual bleeding",
+        "Bleeding between periods", "Bleeding after menopause", "Pelvic pain", "Pelvic pressure"
     ],
     "Vulvar Cancer": [
-        "Itching on vulva",
-        "Burning sensation on vulva",
-        "Vulvar bleeding",
-        "Vulvar skin color changes (redder or whiter)",
-        "Vulvar rash",
-        "Vulvar warts",
-        "Vulvar sores",
-        "Vulvar lumps",
-        "Vulvar ulcers",
-        "Vulvar discharge",
-        "Pelvic pain",
-        "Pain during urination",
-        "Pain during sex",
-        "Lump on labia majora",
-        "Irritation of vulva",
-        "Bartholin gland painful lump"
+        "Itching on vulva", "Burning sensation on vulva", "Vulvar bleeding", "Vulvar skin color changes (redder or whiter)",
+        "Vulvar rash", "Vulvar warts", "Vulvar sores", "Vulvar lumps", "Vulvar ulcers", "Vulvar discharge",
+        "Pelvic pain", "Pain during urination", "Pain during sex", "Lump on labia majora",
+        "Irritation of vulva", "Bartholin gland painful lump"
     ]
 }
 
@@ -101,20 +55,19 @@ both_sex_cancers = {
         "Shiny pearly skin nodule", "Red skin patch", "Skin thickening", "Scar-like skin changes"
     ],
     "Squamous Cell Carcinoma (SCC)": [
-        "Skin lesion", "Crusty patch", "Ulcer", "Red bump",
-        "Skin changes not healing", "Skin ulcer", "Discolored skin",
+        "Skin lesion", "Crusty patch", "Ulcer", "Red bump", "Skin changes not healing", "Skin ulcer", "Discolored skin",
         "Mole changes (jagged edges, bigger size, color change, bleeding, texture change)",
         "Painful lesion", "Itchy lesion", "Burning lesion", "Large brown spot with darker speckles"
     ],
     "Colorectal Cancer": [
         "Blood in stool", "Change in bowel habits", "Abdominal pain", "Weight loss",
-        "Constipation (worsening)", "Thin stool (narrow caliber)", "Loss of appetite", "Nausea",
-        "Vomiting", "Rectal bleeding", "Anemia", "Bowel habit change"
+        "Constipation (worsening)", "Thin stool (narrow caliber)", "Loss of appetite",
+        "Nausea", "Vomiting", "Rectal bleeding", "Anemia", "Bowel habit change"
     ],
     "Primary site unknown": [
-        "Unexplained symptoms", "Weight loss", "Fatigue", "Pain",
-        "Masses or lumps in body", "Swelling in body", "Rapid tumor growth",
-        "Unusual metastasis sites", "Enlarged lymph nodes (armpit, chest, abdomen, pelvis)"
+        "Unexplained symptoms", "Weight loss", "Fatigue", "Pain", "Masses or lumps in body",
+        "Swelling in body", "Rapid tumor growth", "Unusual metastasis sites",
+        "Enlarged lymph nodes (armpit, chest, abdomen, pelvis)"
     ],
     "Melanoma": [
         "Dark mole", "Skin lesion", "Itching", "Change in mole size/color",
@@ -133,25 +86,29 @@ both_sex_cancers = {
         "Lumps under skin"
     ],
     "Lung Cancer": [
-        "Cough", "Chest pain", "Shortness of breath", "Weight loss",
-        "Early: no symptoms", "Persistent cough (new or worsening)", "Coughing blood (streaks or large amounts)",
-        "Loss of appetite", "Fatigue", "Fever", "Night sweats", "Difficulty swallowing", "Hoarseness (voice change)",
-        "Shoulder pain (radiating down arm – Pancoast tumor)", "Swollen lymph nodes (above collarbone)",
-        "Swelling of face/upper body (superior vena cava syndrome)", "Fluid around heart (arrhythmia, heart failure)",
+        "Cough", "Chest pain", "Shortness of breath", "Weight loss", "Early: no symptoms",
+        "Persistent cough (new or worsening)", "Coughing blood (streaks or large amounts)",
+        "Loss of appetite", "Fatigue", "Fever", "Night sweats", "Difficulty swallowing",
+        "Hoarseness (voice change)", "Shoulder pain (radiating down arm – Pancoast tumor)",
+        "Swollen lymph nodes (above collarbone)", "Swelling of face/upper body (superior vena cava syndrome)",
+        "Fluid around heart (arrhythmia, heart failure)",
         "Brain metastasis: headache, nausea, vomiting, seizures, confusion",
         "Bone metastasis: bone pain, fractures, spinal cord compression",
         "Liver metastasis: enlarged liver, abdominal pain, fever, jaundice",
         "Hormone syndromes: Hypercalcemia → nausea, constipation, thirst, confusion",
         "Hormone syndromes: Hyponatremia (low sodium)", "Hypokalemia (low potassium)",
-        "Nail clubbing", "Joint pain, bone thickening (hypertrophic osteoarthropathy)", "Blood clots (migratory thrombophlebitis, heart clots, DIC)",
+        "Nail clubbing", "Joint pain, bone thickening (hypertrophic osteoarthropathy)",
+        "Blood clots (migratory thrombophlebitis, heart clots, DIC)",
         "Autoimmune effects: muscle weakness, neuropathy, brain inflammation"
     ],
     "Oesophagus Cancer": [
         "Difficulty swallowing (solids → liquids)", "Pain when swallowing", "Weight loss", "Loss of appetite",
-        "Pain behind breastbone", "Severe heartburn-like pain", "Hoarse/raspy cough", "Regurgitation of food",
-        "Nausea", "Vomiting", "Coughing when eating/drinking", "Vomiting blood", "Aspiration pneumonia",
-        "Airway obstruction", "Superior vena cava syndrome", "Hypercalcemia (high calcium)",
-        "Metastasis: Liver → jaundice, abdominal swelling", "Metastasis: Lungs → breathing difficulty, pleural effusion",
+        "Pain behind breastbone", "Severe heartburn-like pain", "Hoarse/raspy cough",
+        "Regurgitation of food", "Nausea", "Vomiting", "Coughing when eating/drinking", "Vomiting blood",
+        "Aspiration pneumonia", "Airway obstruction", "Superior vena cava syndrome",
+        "Hypercalcemia (high calcium)",
+        "Metastasis: Liver → jaundice, abdominal swelling",
+        "Metastasis: Lungs → breathing difficulty, pleural effusion",
         "Metastasis: Bone → pain, fractures"
     ],
     "Bladder Cancer": [
@@ -222,17 +179,17 @@ le = LabelEncoder()
 y_encoded = le.fit_transform(y)
 
 # -----------------------------
-# Step 5: Train or load XGBoost model
+# Step 5: Train or load XGBoost model + save all artifacts
 # -----------------------------
 model_file = "cancer_model.pkl"
 le_file = "label_encoder.pkl"
+feat_file = "feature_columns.pkl"
 
-if os.path.exists(model_file) and os.path.exists(le_file):
-    # Load existing model and encoder
+if os.path.exists(model_file) and os.path.exists(le_file) and os.path.exists(feat_file):
     model = joblib.load(model_file)
     le = joblib.load(le_file)
+    feature_columns = joblib.load(feat_file)
 else:
-    # Train model if not found
     model = XGBClassifier(
         objective='multi:softprob',
         num_class=len(le.classes_),
@@ -240,9 +197,12 @@ else:
     )
     model.fit(X, y_encoded)
 
-    # Save model and encoder
+    # Save everything
     joblib.dump(model, model_file)
     joblib.dump(le, le_file)
+    joblib.dump(list(X.columns), feat_file)
+
+feature_columns = joblib.load(feat_file)
 
 # -----------------------------
 # Step 6: Predict function considering sex
@@ -255,10 +215,11 @@ def predict_cancer(input_symptoms, sex):
     features['Sex'] = 0 if sex.lower() == "male" else 1
 
     X_input = pd.DataFrame([features])
+    X_input = X_input[feature_columns]  # ensure same column order
+
     probs = model.predict_proba(X_input)[0]
     prob_dict = {le.classes_[i]: float(probs[i]) for i in range(len(le.classes_))}
 
-    # Filter impossible cancers by sex
     if sex.lower() == "male":
         prob_dict = {k: v for k, v in prob_dict.items() if k in male_symptom_dict}
     else:
@@ -270,12 +231,13 @@ def predict_cancer(input_symptoms, sex):
 # -----------------------------
 # Step 7: Example usage
 # -----------------------------
-user_symptoms = ["Cough", "Chest pain", "Weight loss"]
-user_sex = "Male"
+if __name__ == "__main__":
+    user_symptoms = ["Cough", "Chest pain", "Weight loss"]
+    user_sex = "Male"
 
-top_predictions = predict_cancer(user_symptoms, user_sex)
+    top_predictions = predict_cancer(user_symptoms, user_sex)
 
-print(f"Input symptoms: {user_symptoms} | Sex: {user_sex}")
-print("Predicted top cancer types with probabilities:")
-for cancer, prob in top_predictions.items():
-    print(f"{cancer}: {prob:.2f}")
+    print(f"Input symptoms: {user_symptoms} | Sex: {user_sex}")
+    print("Predicted top cancer types with probabilities:")
+    for cancer, prob in top_predictions.items():
+        print(f"{cancer}: {prob:.2f}")
