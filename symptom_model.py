@@ -4,6 +4,8 @@ from sklearn.preprocessing import LabelEncoder
 from xgboost import XGBClassifier
 import joblib
 import os
+from filters import apply_sex_constraints
+
 
 # -----------------------------
 # Step 1: Define symptom dictionaries by sex
@@ -205,7 +207,7 @@ else:
 feature_columns = joblib.load(feat_file)
 
 # -----------------------------
-# Step 6: Predict function considering sex
+# Step 6: Predict function considering sex (with filtering)
 # -----------------------------
 def predict_cancer(input_symptoms, sex):
     features = {symptom: 0 for symptom in all_symptoms}
@@ -220,10 +222,8 @@ def predict_cancer(input_symptoms, sex):
     probs = model.predict_proba(X_input)[0]
     prob_dict = {le.classes_[i]: float(probs[i]) for i in range(len(le.classes_))}
 
-    if sex.lower() == "male":
-        prob_dict = {k: v for k, v in prob_dict.items() if k in male_symptom_dict}
-    else:
-        prob_dict = {k: v for k, v in prob_dict.items() if k in female_symptom_dict}
+    # Apply sex-based medical constraints
+    prob_dict = apply_sex_constraints(prob_dict, sex, male_symptom_dict, female_symptom_dict)
 
     sorted_probs = dict(sorted(prob_dict.items(), key=lambda x: x[1], reverse=True))
     return sorted_probs
