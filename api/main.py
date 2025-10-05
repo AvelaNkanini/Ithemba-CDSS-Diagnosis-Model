@@ -17,7 +17,7 @@ app = FastAPI(
 # Allow requests from frontend frameworks (React, ASP.NET Core, Angular, etc.)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ✅ In production, restrict this to your frontend URLs
+    allow_origins=["*"],  # In production, restrict this to your frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -30,7 +30,7 @@ def root():
     Basic root route to confirm API is running.
     """
     return {
-        "message": "✅ Cancer Prediction API is running successfully!",
+        "message": "Cancer Prediction API is running successfully!",
         "docs_url": "/docs",
         "example_endpoint": "/predict",
     }
