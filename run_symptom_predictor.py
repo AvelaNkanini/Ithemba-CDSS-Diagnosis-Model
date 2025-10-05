@@ -1,5 +1,5 @@
 import joblib
-from symptom_model import predict_cancer   # <-- use central function
+from symptom_model import predict_cancer   #using central function
 
 # -----------------------------
 # Step 1: Interactive prompt
