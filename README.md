@@ -20,7 +20,7 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 Follow these steps carefully to set up and run the project on your local machine.
 
 #### Create a Virtual Environment
----
+
 A virtual environment keeps dependencies isolated.
 ```bash
 python -m venv venv
