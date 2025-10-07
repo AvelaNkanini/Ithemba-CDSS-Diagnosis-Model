@@ -49,7 +49,7 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 #### How to Test the Model
 ---
-You can now interact with your model using 3 methods:
+You can now interact with the model using 2 methods:
 
 🔹 Option 1: Swagger UI
 
