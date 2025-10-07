@@ -43,7 +43,6 @@ pip freeze > requirements.txt
 uvicorn main:app --reload
 ```
 
----
 You should see something like:
 
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
