@@ -5,15 +5,15 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 
 ### Features
 
-RESTful API built with FastAPI
+- RESTful API built with FastAPI
 
-Predicts cancer type from user symptoms
+- Predicts cancer type from user symptoms
 
-JSON-based input/output
+- JSON-based input/output
 
-Easy to test with Swagger UI or Postman
+- Easy to test with Swagger UI or Postman
 
-Ready for integration with web or mobile frontends
+- Ready for integration with web or mobile frontends
 
 ### Installation Guide
 
@@ -26,20 +26,21 @@ A virtual environment keeps dependencies isolated.
 python -m venv venv
 
 ### Activate the Virtual Environment
-
+```bash
 venv\Scripts\activate
-
+```
 When active, your terminal prompt should show:
 
 (venv) >
 
 ### Install Required Dependencies
-
+```bash
 pip freeze > requirements.txt
-
+```
 ### Run the FastAPI Server
+```bash
 uvicorn main:app --reload
-
+```
 
 You should see something like:
 
