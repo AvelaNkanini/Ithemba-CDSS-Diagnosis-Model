@@ -4,7 +4,7 @@ This project provides a machine learning API built with FastAPI for predicting c
 It uses an XGBoost classifier and includes a pre-trained model for demonstration purposes.
 
 ### Features
----
+----
 - RESTful API built with FastAPI
 
 - Predicts cancer type from user symptoms
@@ -15,7 +15,7 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 
 - Ready for integration with web or mobile frontends
 
-## Installation Guide
+### Installation Guide
 ---
 Follow these steps carefully to set up and run the project on your local machine.
 
