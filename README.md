@@ -15,7 +15,7 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 
 - Ready for integration with web or mobile frontends
 
-### Installation Guide
+## Installation Guide
 
 Follow these steps carefully to set up and run the project on your local machine.
 
@@ -46,7 +46,7 @@ You should see something like:
 
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
-### 🌐 How to Test the Model
+### How to Test the Model
 
 You can now interact with your model using 3 methods:
 
@@ -54,7 +54,7 @@ You can now interact with your model using 3 methods:
 
 Visit:
 
-### 👉 http://127.0.0.1:8000/docs
+###  http://127.0.0.1:8000/docs
 
 This will open an interactive web interface where you can test predictions easily.
 
@@ -62,7 +62,7 @@ This will open an interactive web interface where you can test predictions easil
 
 Visit:
 
-### 👉 http://127.0.0.1:8000/redoc
+###  http://127.0.0.1:8000/redoc
 
 This provides a clean documentation view of all endpoints.
 
