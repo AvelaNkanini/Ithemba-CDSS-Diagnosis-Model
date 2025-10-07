@@ -1,10 +1,10 @@
-## Cancer Prediction API (FastAPI + XGBoost)
-
+### Cancer Prediction API (FastAPI + XGBoost)
+---
 This project provides a machine learning API built with FastAPI for predicting cancer types based on user-provided symptoms.
 It uses an XGBoost classifier and includes a pre-trained model for demonstration purposes.
 
-### Features
-------
+#### Features
+---
 - RESTful API built with FastAPI
 
 - Predicts cancer type from user symptoms
@@ -15,38 +15,40 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 
 - Ready for integration with web or mobile frontends
 
-### Installation Guide
+#### Installation Guide
 ---
 Follow these steps carefully to set up and run the project on your local machine.
 
-### Create a Virtual Environment
+#### Create a Virtual Environment
 ---
 A virtual environment keeps dependencies isolated.
 ```bash
 python -m venv venv
 ```
-### Activate the Virtual Environment
+#### Activate the Virtual Environment
+
 ```bash
 venv\Scripts\activate
 ```
 When active, your terminal prompt should show:
-
+```bash
 (venv) >
-
-### Install Required Dependencies
+```
+#### Install Required Dependencies
 ```bash
 pip freeze > requirements.txt
 ```
-### Run the FastAPI Server
+#### Run the FastAPI Server
 ```bash
 uvicorn main:app --reload
 ```
 
+---
 You should see something like:
 
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
-### How to Test the Model
+#### How to Test the Model
 
 You can now interact with your model using 3 methods:
 
@@ -54,7 +56,7 @@ You can now interact with your model using 3 methods:
 
 Visit:
 
-###  http://127.0.0.1:8000/docs
+  http://127.0.0.1:8000/docs
 
 This will open an interactive web interface where you can test predictions easily.
 
@@ -62,7 +64,7 @@ This will open an interactive web interface where you can test predictions easil
 
 Visit:
 
-###  http://127.0.0.1:8000/redoc
+  http://127.0.0.1:8000/redoc
 
 This provides a clean documentation view of all endpoints.
 
