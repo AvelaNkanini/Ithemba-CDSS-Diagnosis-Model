@@ -26,9 +26,8 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
   </tr>
   <tr>
     <td><img width="996" height="556" alt="image" src="https://github.com/user-attachments/assets/06877824-96d8-4b0e-9e94-ad40b0c82c9f" />
-
 </td>
-    <td><img width="1022" height="503" alt="image" src="https://github.com/user-attachments/assets/41d32fea-cb31-4a3c-a593-e8f4c01f0735" />
+    <td><img width="996" height="557" alt="image" src="https://github.com/user-attachments/assets/03f86941-36e9-415b-a3d4-a1cca9c93f17" />
 </td>
   </tr>
 </table>
