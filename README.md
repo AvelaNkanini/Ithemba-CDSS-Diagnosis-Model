@@ -16,6 +16,7 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 - Ready for integration with web or mobile frontends
 
 ### Model Screenshots
+---
 
 <table>
   <tr>
