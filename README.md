@@ -15,6 +15,26 @@ It uses an XGBoost classifier and includes a pre-trained model for demonstration
 
 - Ready for integration with web or mobile frontends
 
+## Model Screenshots
+
+<table>
+  <tr>
+    <td><img width="990" height="555" alt="image" src="https://github.com/user-attachments/assets/11b929f2-3243-41b5-967e-a9c619c6bc24" />
+    </td>
+    <td><img width="987" height="524" alt="image" src="https://github.com/user-attachments/assets/7217daf1-f2ef-4c8f-a64e-2fcdb69a8305" />
+  </td>
+  </tr>
+  <tr>
+    <td><img width="996" height="556" alt="image" src="https://github.com/user-attachments/assets/06877824-96d8-4b0e-9e94-ad40b0c82c9f" />
+
+</td>
+    <td><img width="1022" height="503" alt="image" src="https://github.com/user-attachments/assets/41d32fea-cb31-4a3c-a593-e8f4c01f0735" />
+</td>
+  </tr>
+</table>
+
+---
+
 ### Installation Guide
 ---
 Follow these steps carefully to set up and run the project on your local machine.
